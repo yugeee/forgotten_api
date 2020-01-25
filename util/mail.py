@@ -5,9 +5,9 @@ from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.utils import formatdate
 
-FROM_ADDRESS = 'yugenaoki1016@gmail.com'
+FROM_ADDRESS = 'xxxxxxx@gmail.com'
 MY_PASSWORD = 'Nic47746!'
-BCC = 'yugenaoki1016@gmail.com'
+BCC = 'xxxxxxxx@gmail.com'
 SUBJECT = '【月末報告】'
 BODY = """さんから月末報告がありました。
 確認おねがいします。"""
