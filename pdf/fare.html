@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<h1>{{ user.name }} {{ year }}年 {{ month }}月度勤怠報告書</h1>
+<table border="5" rules="all" align="center" cellpadding="15">
+<thead>
+<tr>
+    <th align="left" valign="bottom">日付</th>
+    <th align="left" valign="bottom">訪問先・目的</th>
+    <th align="left" valign="bottom">交通手段</th>
+    <th align="left" valign="bottom">出発</th>
+    <th align="left" valign="bottom">到着</th>
+    <th align="left" valign="bottom">片/往</th>
+    <th align="left" valign="bottom">金額</th>
+</tr>
+</thead>
+<tbody>
+{% for fare in fares %}
+    <tr>
+        <td align="left" valign="bottom">{{ fare.date }}</td>
+        <td align="left" valign="bottom">{{ fare.purpose }}</td>
+        <td align="left" valign="bottom">{{ fare.transportation }}</td>
+        <td align="left" valign="bottom">{{ fare.departure }}</td>
+        <td align="left" valign="bottom">{{ fare.arrival }}</td>
+        <td align="left" valign="bottom">{{ fare.round_trip }}</td>
+        <td align="left" valign="bottom">{{ fare.fare }}</td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+<p align="right">合計: {{ fare_total }}</p>
+</body>
+</html>
