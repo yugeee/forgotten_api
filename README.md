@@ -11,7 +11,8 @@ Python + flaskで実装
 
 
 # これなに
-[forgotten]（https://github.com/yugeee/forgotten） のAPI版
+[forgotten]（https://github.com/yugeee/forgotten） のAPI版  
+認証に [ユーザAPI](https://github.com/yugeee/api) が必要
 
 ## 自分とこでうごかす
 
@@ -23,5 +24,5 @@ Python + flaskで実装
 
 ## 所感
 
-ブロックを書かなくて良いのは楽。
+ブロックを書かなくて良いのは楽。  
 フルスタックよりはマイクロフレームワークのほうが好きかも知れない
